@@ -1,4 +1,4 @@
-<!-- Copyright (c) 2021 by Behzad Nemati(https://codepen.io/Behzad_ne_77/pen/XWNJapX) -->
+<!-- Copyright (c) 2021 by Aigars Silkalns (https://codepen.io/colorlib/pen/rxddKy) -->
 
 <html lang="en">
 <head>
@@ -9,36 +9,15 @@
     <title>Document</title>
 </head>
 <body>
-    <html>
-    <meta charset="utf-8">
-    <title>Login</title>
-    <body>
-        <div id="Login">
-            <form>
-                <div class="user-box">
-                    <input id="id" type="text" name="id" required>
-                    <label>ID</label>
-                </div>
-                <div class="user-box">
-                    <input id="password" type="password" name="Password" required>
-                    <label>Password</label>
-                </div>
-                <div class="user-box">
-                    <a href="/register" onclick="Register">Register</a>
-                </div>
-                <div class="user-box-button">
-                        <a id="button" href="/">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            
-                            <span></span>
-                            Send
-                        </a>
-                </div>
-            </form>
+    <div class="login-page">
+        <div class="form">
+          <form class="login-form">
+            <input id="id" type="text" placeholder="아이디"/>
+            <input id="password" type="password" placeholder="비밀번호"/>
+            <a id="button">login</a>
+            <p class="message">Not registered? <a href="/register">Create an account</a></p>
+          </form>
         </div>
-    </body>
-</html>
+      </div>
 </body>
 </html>

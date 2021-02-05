@@ -1,41 +1,25 @@
-<!-- Copyright (c) 2021 by Behzad Nemati(https://codepen.io/Behzad_ne_77/pen/XWNJapX) -->
+<!-- Copyright (c) 2021 by Aigars Silkalns (https://codepen.io/colorlib/pen/rxddKy) -->
 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/home/register.css">
+    <link rel="stylesheet" href="/css/home/login.css">
     <script src="/js/home/register.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <html>
-    <meta charset="utf-8">
-    <title>Login</title>
-    <body>
-        <div id="Login">
-            <form>
-                <div class="user-box">
-                    <input id="id" type="text" name="id" required>
-                    <label>ID</label>
-                </div>
-                <div class="user-box">
-                    <input id="name" type="text" name="name" required>
-                    <label>Name</label>
-                <div class="user-box">
-                    <input id="password" type="password" name="Password" required>
-                    <label>Password</label>
-                </div>
-                <div class="user-box">
-                    <input id="conformpass_word" type="password" name="conformpass_word" required>
-                    <label>conform password</label>
-                </div>
-                <a class="user-box-button">
-                    <a id="button" href="/login">Done</a>
-                </a>
-            </form>
+    <div class="login-page">
+        <div class="form">
+          <form class="login-form">
+            <input id="id" type="text" placeholder="아이디"/>
+            <input id="name" type="text" placeholder="이름"/>
+            <input id="password" type="password" placeholder="비밀번호"/>
+            <input id="conformpass_word" type="password" placeholder="비밀번호 확인"/>
+            <p id="button">Sign up</p>
+            <p class="message">Already registered? <a href="/login">Login</a></p>
+          </form>
         </div>
-    </body>
-</html>
+      </div>
 </body>
 </html>

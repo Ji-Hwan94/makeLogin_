@@ -18,6 +18,7 @@ function register(){
         id: id.value,
         name: name.value,
         password: password.value,
+        conformpass_word: conformpass_word.value
     };
 
     fetch("/register", {
