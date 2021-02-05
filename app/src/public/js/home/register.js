@@ -2,17 +2,22 @@
 //Dom -> Documenty Object Model 자바스크립트에서 html의 자료를 가져와서 제어할 수 있게 한다.
 
 const id = document.querySelector("#id"),
+    name = document.querySelector("#name"),
     password = document.querySelector("#password"),
-    loginBtn = document.querySelector("#button");
+    conformpass_word = document.querySelector("#conformpass_word"),
+    registerBtn = document.querySelector("#button");
     
-    loginBtn.addEventListener("click", login);
-
-function login(){
+    registerBtn.addEventListener("click", register);
+    
+function register(){
     const req ={
         id: id.value,
+        name: name.value,
         password: password.value,
+        conformpass_word: conformpass_word.value,
     };
-    fetch("/login", {
+
+    fetch("/register", {
         method: "POST",
         headers: {
             "Content-Type" : "application/json",
@@ -22,13 +27,13 @@ function login(){
     .then((res) => res.json())
     .then((res) => {
         if (res.success){
-            location.href = "/"
+            location.href = "/login"
         } else {
             alert(res.msg);
         }
     })
     .catch((err) => {
-        console.error("로그인 중 에러 발생");
+        console.error("회원가입 중 에러 발생");
     });
 }
 
