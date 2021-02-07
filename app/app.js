@@ -3,6 +3,9 @@
 // 모듈
 const express = require("express");
 const bodyParser = require("body-parser");
+const dotenv = require("dotenv");
+dotenv.config(); // 환경변수
+
 const app = express();
 
 //Routing(폴더를 불러오는 방법)
